@@ -1,0 +1,3 @@
+[submodule "datamark-backend"]
+	path = datamark-backend
+	url = https://github.com/cyberpunk317/datamark-backend.git
