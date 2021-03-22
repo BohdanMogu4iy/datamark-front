@@ -7,7 +7,7 @@ on:
     tags:
       - '!refs/tags/*'
     branches:
-      - '*'
+      - 'development'
 
 jobs:
   build:
