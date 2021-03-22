@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/datamark-front/static/css/main.9d5b29c0.chunk.css",
+    "main.js": "/datamark-front/static/js/main.621acd58.chunk.js",
+    "main.js.map": "/datamark-front/static/js/main.621acd58.chunk.js.map",
+    "runtime-main.js": "/datamark-front/static/js/runtime-main.20e6dde3.js",
+    "runtime-main.js.map": "/datamark-front/static/js/runtime-main.20e6dde3.js.map",
+    "static/js/2.53db10d8.chunk.js": "/datamark-front/static/js/2.53db10d8.chunk.js",
+    "static/js/2.53db10d8.chunk.js.map": "/datamark-front/static/js/2.53db10d8.chunk.js.map",
+    "static/js/3.b555d0ff.chunk.js": "/datamark-front/static/js/3.b555d0ff.chunk.js",
+    "static/js/3.b555d0ff.chunk.js.map": "/datamark-front/static/js/3.b555d0ff.chunk.js.map",
+    "index.html": "/datamark-front/index.html",
+    "static/css/main.9d5b29c0.chunk.css.map": "/datamark-front/static/css/main.9d5b29c0.chunk.css.map",
+    "static/js/2.53db10d8.chunk.js.LICENSE.txt": "/datamark-front/static/js/2.53db10d8.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/datamark-front/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.20e6dde3.js",
+    "static/js/2.53db10d8.chunk.js",
+    "static/css/main.9d5b29c0.chunk.css",
+    "static/js/main.621acd58.chunk.js"
+  ]
+}
