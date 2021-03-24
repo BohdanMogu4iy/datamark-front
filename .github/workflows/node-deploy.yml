@@ -1,13 +1,13 @@
 name: gh-pages-deploy
 
 on:
-  push:
+   push:
     branches: [ development ]
   pull_request:
     branches: [ development ]
 
 jobs:
-   test:
+  test:
     runs-on: ubuntu-latest
 
     strategy:
