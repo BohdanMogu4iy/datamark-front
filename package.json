@@ -1,6 +1,6 @@
 {
   "homepage": "http://bohdanmogu4iy.github.io/datamark-front",
-  "name": "datamark",
+  "name": "datamark-front",
   "version": "0.2.0",
   "private": "false",
   "dependencies": {
