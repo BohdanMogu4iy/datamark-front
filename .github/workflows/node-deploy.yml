@@ -1,12 +1,11 @@
-name: gh-pages
+name: gh-pages-deploy
 
 on:
   push:
     branches: [development]
 
 jobs:
-  run_test:
-
+   test:
     runs-on: ubuntu-latest
 
     strategy:
@@ -14,14 +13,44 @@ jobs:
         node-version: [10.x, 12.x, 14.x]
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
+      - name: Checks-out
+        uses: actions/checkout@v2
 
-    - name: Install dependencies
-      run: npm install
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
 
-    - name: Deploy
-      run: npm run deploy
+      - name: Install dependencies
+        run: npm install
+
+      - name: Test Code
+        run: npm run test
+
+  deploy:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [10.x, 12.x, 14.x]
+
+    steps:
+      - name: Checks-out
+        uses: actions/checkout@v2
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build 🔧
+        run: npm run build
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.1.0
+        with:
+          branch: gh-pages 
+          folder: build 
