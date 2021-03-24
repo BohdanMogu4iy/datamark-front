@@ -1,9 +1,9 @@
-name: test
+name: gh-pages
 
 on:
   push:
     branches:
-      -"*"
+      -"development"
 
 jobs:
   run_test:
@@ -24,5 +24,5 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Run the tests
-      run: npm run test
+    - name: Deploy
+      run: npm run deploy
