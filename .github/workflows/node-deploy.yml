@@ -2,8 +2,7 @@ name: gh-pages
 
 on:
   push:
-    branches:
-      -"development"
+    branches: [development]
 
 jobs:
   run_test:
