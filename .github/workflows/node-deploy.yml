@@ -2,7 +2,9 @@ name: gh-pages-deploy
 
 on:
   push:
-    branches: [development]
+    branches: [ development ]
+  pull_request:
+    branches: [ development ]
 
 jobs:
    test:
