@@ -2,6 +2,7 @@
   "homepage": "http://bohdanmogu4iy.github.io/datamark-front",
   "name": "datamark-front",
   "version": "0.2.0",
+  "private": "false",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
